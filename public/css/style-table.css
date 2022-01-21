@@ -1,0 +1,172 @@
+:root
+{
+    --blue:#287bff;
+    --white:#fff;
+    --grey:#f5f5f5;
+    --black1:#222;
+    --black2:#999;
+}
+.details .users
+{
+    position: relative;
+    display: grid;
+    min-height: 300px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+.cardHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader h2
+{
+    font-weight: 600;
+    color: var(--blue);
+}
+.btn
+{
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+.btn2
+{
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  background: var(--blue);
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.btn3
+{
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  background: red;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.welcome
+{
+  display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: var(--blue);
+    
+}
+.details table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+.details table thead td
+{
+    font-weight: 600;
+    text-align: center;
+}
+.details .users table  tbody td
+{
+    text-align: center;
+}
+.details .users table  tr
+{
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) ;
+}
+.details .users table  tr:last-child
+{
+    border-bottom: none;
+}
+.details .users table  tr:hover
+{
+    background: var(--blue);
+    color: var(--white);
+}
+.details .users table  tr td
+{
+    padding: 10px;
+}
+
+.details .users .btn-update
+{
+    position: relative;
+    padding: 5px 10px;
+    background: green;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+.details .users .btn-delete
+{
+    position: relative;
+    padding: 5px 10px;
+    background: red;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+  }
+  .switch-input {
+    display: none;
+  }
+  .switch-label {
+    display: block;
+    width: 48px;
+    height: 24px;
+    text-indent: -150%;
+    clip: rect(0 0 0 0);
+    color: transparent;
+    user-select: none;
+  }
+  .switch-label::before,
+  .switch-label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
+  .switch-label::before {
+    width: 100%;
+    height: 100%;
+    background-color: #dedede;
+    border-radius: 9999em;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+  }
+  .switch-label::after {
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    -webkit-transition: left 0.25s ease;
+    transition: left 0.25s ease;
+  }
+  .switch-input:checked + .switch-label::before {
+    background-color: #89c12d;
+  }
+  .switch-input:checked + .switch-label::after {
+    left: 24px;
+  }
+  
